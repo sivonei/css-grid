@@ -1,0 +1,106 @@
+:root {
+    --gap : 1rem
+}
+
+.leyout{
+    display: grid; 
+    height: 100vh;
+    grid-gap: var(--gap);  
+    grid-template-areas:
+        "header header header"
+        "aside b1 b2"
+        "aside b3 b4"
+        "footer footer footer";
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 10vh 50vh 50vh 20vh;
+    text-align: center;
+
+    
+}
+.leyout p {
+    text-align: justify;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.grid {
+    background: rgb(82, 76, 29);
+    
+}
+
+.grid-header {
+    grid-area: header;
+    border-radius: 10px;
+    background-color: darkorchid;
+
+
+}
+
+.grid-b1 {
+    grid-area: b1;
+    border-radius: 10px;
+    
+
+
+
+}
+.grid-b2 {
+    grid-area: b2;
+    border-radius: 10px;
+
+
+}
+.grid-b3 {
+    grid-area: b3;
+    border-radius: 10px;
+
+
+}
+.grid-b4 {
+    grid-area: b4;
+    border-radius: 10px;
+
+
+}
+
+.grid-aside {
+    grid-area: aside;
+    background-color: rgb(91, 109, 54);
+    border-radius: 10px;
+
+
+
+}
+
+.grid-footer {
+    grid-area: footer;
+    background-color: rgb(154, 141, 238);
+    border-radius: 10px;
+
+
+
+}
+
+@media only screen and (max-width:550px){
+    .leyout {
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 50vh 30vh 30vh 30vh 30vh 10vh;
+        grid-template-areas:
+        "header"
+        "aside"
+        "b1"
+        "b2"
+        "b3"
+        "b4"
+        "footer";
+        text-align: justify;
+        
+    }
+    
+    .grid-aside {
+        margin-right: 0rem;
+        border-radius: 10px;
+
+
+}
