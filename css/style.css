@@ -82,10 +82,10 @@
 
 }
 
-@media only screen and (max-width:550px){
+@media  screen and (max-width:700px){
     .leyout {
         grid-template-columns: 1fr;
-        grid-template-rows: 10vh 50vh 30vh 30vh 30vh 30vh 10vh;
+        grid-template-rows: 10vh 50vh 50vh 50vh 50vh 50vh 10vh;
         grid-template-areas:
         "header"
         "aside"
@@ -94,13 +94,14 @@
         "b3"
         "b4"
         "footer";
-        text-align: justify;
+        text-align: center;
         
     }
     
     .grid-aside {
         margin-right: 0rem;
         border-radius: 10px;
+    }
 
 
 }
